@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
 import FirebaseLogin from './Components/FirebaseLogin';
-import FirebaseHome from './FirebaseHome';
+import FirebaseHome from './Components/FirebaseHome';
 import './App.css';
 
 class App extends Component {
