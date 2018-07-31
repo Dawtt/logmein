@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
-import Login from './Login';
+import FirebaseLogin from './FirebaseLogin';
 import Home from './Home';
 import './App.css';
 
@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.user ? (<Home />) : (<Login/>)}
+        {this.state.user ? (<Home />) : (<FirebaseLogin/>)}
       </div>
     );
   }

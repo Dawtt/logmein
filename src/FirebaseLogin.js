@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import {Link} from 'react-router-dom';
 import fire from './config/Fire'
 
-class Login extends Component {
+class FirebaseLogin extends Component {
   constructor(props) {
     super(props);
     this.login = this.login.bind(this);
@@ -38,19 +38,19 @@ class Login extends Component {
     return(
       <div className="col-md-6">
       <form>
-      <div class="form-group">
-      <label for="exampleInputEmail"> Email Address </label>
+      <div className="form-group">
+      <label htmlFor="exampleInputEmail"> Email Address </label>
       <input value={this.state.email} onChange={this.handleChange} type="email" name="email"
-      class="form-control" id="exampleInputEmail" aria-decribedby="emailHelp"
+      className="form-control" id="exampleInputEmail" aria-describedby="emailHelp"
       placeholder="Enter email" />
-      <small id="emailHelp" class="form-text text-muted"> We will never share your email</small>
+      <small id="emailHelp" className="form-text text-muted"> We will never share your email</small>
       </div>
-      <div clas="form-group">
-      <label for="exampleInputPassword1">Password</label>
+      <div className="form-group">
+      <label form="exampleInputPassword1">Password</label>
       <input value={this.state.password} onChange={this.handleChange} type="password"
-      name="passowrd" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+      name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
       </div>
-      <button type="submit" onClick={this.login} class="btn btn-primary">Login</button>
+      <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
       <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup </button>
       </form>
 
@@ -58,4 +58,4 @@ class Login extends Component {
     );
   }
 }
-export default Login;
+export default FirebaseLogin;

@@ -1,4 +1,4 @@
-# 
+# add firebase to package.json
 
 
 
