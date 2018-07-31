@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import fire from './config/Fire'
 
-class Home extends Component {
+class FirebaseHome extends Component {
   constructor(props) {
     super(props);
     this.logout = this.logout.bind(this);
@@ -15,10 +15,10 @@ class Home extends Component {
   render() {
     return (
       <div className="col-md-6">
-      <h1> You are Home </h1>
+      <p> Logged in to Firebase </p>
       <button onClick={this.logout}>Logout</button>
       </div>
     );
   }
 }
-export default Home;
+export default FirebaseHome;
