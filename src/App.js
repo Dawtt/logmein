@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import fire from './config/Fire';
-import FirebaseLogin from './FirebaseLogin';
+import FirebaseLogin from './Components/FirebaseLogin';
 import Home from './Home';
 import './App.css';
 

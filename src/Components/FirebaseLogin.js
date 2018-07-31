@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import {Link} from 'react-router-dom';
-import fire from './config/Fire'
+import fire from '../config/Fire'
 
 class FirebaseLogin extends Component {
   constructor(props) {
